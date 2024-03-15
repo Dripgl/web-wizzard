@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --mainbg:#f8f9fc;
+  --section: #FBEAFF;
+}
+
+.home-container{
+  position: relative;
+}
+
+.home{
+  width: 100%;
+  height: 88vh;
+  color: #02521c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*SETTINGS HOME DESCRIPTION*/
+
+.title {
+  height: 100vh;
+  height: auto; 
+  color: #02521c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title p{
+  font-size: 18px;
+  letter-spacing: 2pz;
+  margin-bottom: 20px;
+}
+
+.title h1{
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.job{
+  font-size: 70px;
+  color: #9B3C27;
+  margin-bottom: 10px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.title h3{
+  font-size: 40px;
+}
+
+/*SETTINGS HOME DESCRIPTION*/
+
+.project{
+  width: 100%;
+  height: auto;
+  padding: 100px;
+}
+
+.section {
+  width: fit-content;
+  padding: 30px;
+  margin: auto;
+}
+.section ul{
+  display: flex;
+  gap: 20px;
+}
+
+.section ul li{
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.demo {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.swiper-slide{
+  flex-shrink: 0;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+  font-size: xx-large;
+}
+
+.swiper{
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Media query per adattare il componente su schermi più piccoli */
+@media screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 60px;
+  }
+  
+  .job {
+    font-size: 50px;
+  }
+  
+  .title h3 {
+    font-size: 30px;
+  }
+  
+  .project {
+    padding: 50px;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .section ul li {
+    font-size: 16px;
+  }
+  
+  .demo {
+    margin-top: 15px;
+  }
+  
+  .swiper-slide {
+    font-size: large;
+  }
+}

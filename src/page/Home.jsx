@@ -1,0 +1,39 @@
+import '../style/Home.css';
+import React from 'react';
+import Typewriter from "typewriter-effect";
+import ParticlesContainer from '../components/Animation';
+import Project from './Project';
+import Process from './Process';
+
+
+
+const Home = () => {
+
+  return (
+    <div className="home-container">
+      <ParticlesContainer />
+      <div className="home">
+        <div className="title">
+          <p>WELCOME TO OUR WORLD</p>
+          <h1>Hi, we are</h1>
+        </div>
+
+        <div className="job">
+          <Typewriter
+            options={{
+              strings: ["Frontend Developer", "Social Media Manager", "Project Manager"],
+              autoStart: true,
+              loop: true, // Imposta il loop infinito
+            }}
+          />
+        </div>
+        <h3>Based in Italy</h3>
+      </div>
+      <Process/>
+      <Project />
+
+    </div>
+  );
+}
+
+export default Home;
