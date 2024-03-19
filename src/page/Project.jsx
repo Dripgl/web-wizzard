@@ -2,19 +2,18 @@ import React from "react";
 import "../style/Projects.css"
 import { cardDetails } from "../components/Carousel-config";
 import CarouselItem from "../components/CarouselItem";
-import ReactPlayer from "react-player";
+import blue from "../asset/blue.gif";
+import Vitamin from "../asset/Vitamin.gif";
+
 
 const Project = () => {
     return (
         <div className="project">
             <div className="carousel-track">
-                {Object.keys(cardDetails).map((detailKey) => (
-                    <CarouselItem
-                        key={detailKey}
-                        imgUrl={cardDetails[detailKey].imgUrl}
-                        imgTitle={cardDetails[detailKey].title}
-                    />    
-                ))}
+
+                <CarouselItem gifs={[blue, Vitamin]} imgTitle="Titolo del video 1" />
+                {/* <CarouselItem gif={Vitamin} imgTitle="Titolo del video 1" /> */}
+
             </div>
         </div>
     )

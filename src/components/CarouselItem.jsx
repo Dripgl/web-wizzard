@@ -1,18 +1,35 @@
-import React, { useState } from "react";
-import "../style/Projects.css"
+import React, { useState, useEffect } from "react";
+import "../style/Projects.css";
 
-function CarouselItem({ imgUrl, imgTitle }) {
+function CarouselItem({ imgTitle, gifs }) {
 
-  const [flipped, setFlipped] = useState(false); // Stato per tenere traccia se la card è "ruotata" o meno
+  const [currentGifIndex, setCurrentGifIndex] = useState(0);
+  const [flipped, setFlipped] = useState(false);
 
   const handleFlip = () => {
-    setFlipped(!flipped); // Inverte lo stato di "flipped" quando viene cliccato
-  };
+    setFlipped(!flipped);
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentGifIndex((prevIndex) => (prevIndex + 1) % gifs.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [gifs.length]);
+
   return (
-    <div className={`carousel-card ${flipped ? 'flipped' : ''}`} onClick={handleFlip}>
+    <div className={`carousel-card ${flipped ? "flipped" : ""}`} onClick={handleFlip}>
+
       <div className="front">
-        {/* Contenuto della parte anteriore della card */}
-        <img src={imgUrl} alt={imgTitle} />
+        {gifs.map((gif, index) => (
+          <img
+            key={index}
+            src={gif}
+            alt={`GIF ${index}`}
+            style={{ display: index === currentGifIndex ? "block" : "none" }}
+            className="carousel-gif" />
+        ))}
         <h2>{imgTitle}</h2>
       </div>
       <div className="back">
