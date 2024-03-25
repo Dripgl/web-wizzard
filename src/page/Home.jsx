@@ -2,8 +2,8 @@ import '../style/Home.css';
 import React from 'react';
 import Typewriter from "typewriter-effect";
 import ParticlesContainer from '../components/Animation';
-import Project from './Project';
 import Process from './Process';
+import Services from './Services';
 
 
 
@@ -29,8 +29,8 @@ const Home = () => {
         </div>
         <h3>Based in Italy</h3>
       </div>
+      <Services/>
       <Process/>
-      <Project />
 
     </div>
   );
