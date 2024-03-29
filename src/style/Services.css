@@ -1,9 +1,9 @@
 /* Stile generale per il contenitore dei servizi */
 .services-container {
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
     padding: 20px;
-    /* background-color: black; */
+    background-color: white;
   }
   
   /* Stile per ciascun item */
@@ -16,11 +16,12 @@
   }
   
   /* Stile per le icone */
-  .service-icon {
+  .service-icon { 
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #ccc; /* Colore di sfondo delle icone */
+    border: 1px solid black;
+    background-color: white; /* Colore di sfondo delle icone */
     display: flex;
     justify-content: center;
     align-items: center;

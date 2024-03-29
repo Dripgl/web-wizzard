@@ -8,7 +8,7 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
     return (
 
-        <div className="cont_ft">
+        <div>
 
             <div className="text-center">
                 <div className=" icon_cont">

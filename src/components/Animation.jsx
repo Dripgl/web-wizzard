@@ -1,9 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 import "../style/Animation.css"
 
 const ParticlesContainer = () => {
@@ -28,10 +26,10 @@ const ParticlesContainer = () => {
     () => ({
       background: {
         color: {
-          value: "#FCFCFC",
+          value: "#000000",
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 40,
       interactivity: {
         events: {
           onClick: {
@@ -55,10 +53,10 @@ const ParticlesContainer = () => {
       },
       particles: {
         color: {
-          value: "#02521c",
+          value: "#FFFFFF",
         },
         links: {
-          color: "#02521c",
+          color: "#FFFFFF",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -116,12 +114,6 @@ const ParticlesContainer = () => {
       </div>
     );
   }
-
-  return (
-    <>
-      
-    </>
-  )
 
 };
 

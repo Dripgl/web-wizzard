@@ -11,10 +11,10 @@ function ProcessLeft() {
         <div className="container">
             <VerticalTimeline className="container-timeline">
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#02521c', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #fff' }}
-                    iconStyle={{ background: '#02521c', color: '#fff' }}
+                    className="timeline"
+                    contentStyle={{ background: '#008f39', color: '#000000' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #000000' }}
+                    iconStyle={{ background: '#000000', color: '#fff' }}
                 >
                     <h3 className="vertical-timeline-element-title">Concepimento del Progetto</h3>
                     <p>
@@ -24,7 +24,7 @@ function ProcessLeft() {
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    iconStyle={{ background: '#02521c', color: '#fff' }}
+                    iconStyle={{ background: '#000000', color: '#fff' }}
                 >
                     <div className="icon-container">
                         {/* <FontAwesomeIcon icon={faChartLine} /> */}
@@ -37,7 +37,7 @@ function ProcessLeft() {
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    iconStyle={{ background: '#02521c', color: '#fff' }}
+                    iconStyle={{ background: '#000000', color: '#fff' }}
                 >
                     <div className="icon-container">
                         {/* <FontAwesomeIcon icon={faChartLine} /> */}
@@ -50,7 +50,7 @@ function ProcessLeft() {
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    iconStyle={{ background: '#02521c', color: '#fff' }}
+                    iconStyle={{ background: '#000000', color: '#fff' }}
                 >
                     <div className="icon-container">
                         {/* <FontAwesomeIcon icon={faChartLine} /> */}
@@ -63,7 +63,7 @@ function ProcessLeft() {
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    iconStyle={{ background: '#02521c', color: '#fff' }}
+                    iconStyle={{ background: '#000000', color: '#fff' }}
                 >
                     <div className="icon-container">
                         {/* <FontAwesomeIcon icon={faChartLine} /> */}
