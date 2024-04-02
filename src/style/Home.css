@@ -47,11 +47,11 @@
 
 .job{
   font-size: 70px;
-  color: #008f39;
+  color: #000000;
   margin-bottom: 10px;
   font-weight: 800;
   text-align: center;
-  text-shadow: 0px -4px 0 white;
+  text-shadow: 0px 1px 0 white;
 }
 
 .title h3{

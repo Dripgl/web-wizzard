@@ -8,12 +8,10 @@
 } */
 
 .container {
-    background-color: white;
+    background-color: #00b5ec96;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
   }
   
   .container-timeline {

@@ -26,7 +26,7 @@ const ParticlesContainer = () => {
     () => ({
       background: {
         color: {
-          value: "#000000",
+          value: "#00B6EC",
         },
       },
       fpsLimit: 40,
