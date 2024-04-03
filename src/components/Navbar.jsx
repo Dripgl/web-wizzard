@@ -9,19 +9,16 @@ const Header = () => {
                 {/* <img src={LogoImg} alt="logo" className="" /> */}
                 <div className="container-fluid">
                     <a className="navbar-brand">
-                        <img src={LogoImg} className="logo d-inline-block align-text-top"/>
+                        <img src={LogoImg} className="logo d-inline-block align-text-top" />
                         Web Wizards
                     </a>
                 </div>
             </nav>
 
-            {/* <div className="btn" >
-                <button>
-                    <Link className="nav_link " to={`/Admin`}>
-                        Vote us!</Link>
-                </button>
-            </div> */}
-            
+            <div className="navbar navbar-light bg-light ">  
+                    <button className="btn btn-outline-success me-2 btn_contact" type="button"> Contact! </button>
+            </div>
+
         </header>
     )
 };
