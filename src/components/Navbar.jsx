@@ -1,13 +1,15 @@
 import React from "react";
 import '../style/Navbar.css';
+import LogoImg from "../asset/logo.png";
 
 const Header = () => {
     return (
         <header>
             <nav className="navbar bg-body-tertiary">
+                {/* <img src={LogoImg} alt="logo" className="" /> */}
                 <div className="container-fluid">
                     <a className="navbar-brand">
-                        {/* <img src="" width="30" height="24" className="d-inline-block align-text-top"/> */}
+                        <img src={LogoImg} className="logo d-inline-block align-text-top"/>
                         Web Wizards
                     </a>
                 </div>

@@ -21,7 +21,7 @@ const Home = () => {
         <div className="job">
           <Typewriter
             options={{
-              strings: ["Frontend Developer", "Social Media Manager", "Project Manager"],
+              strings: ["Frontend Developer", "Web Designer", "Project Manager"],
               autoStart: true,
               loop: true, // Imposta il loop infinito
             }}

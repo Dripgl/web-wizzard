@@ -6,16 +6,20 @@ header {
     justify-content: center;
     align-items: center;
     padding: 0px 100px;
-    background-color: rgba(255, 255, 255, 0.925);
+    /* background-color: rgba(255, 255, 255, 0.925); */
 } 
 
 .navbar-brand {
     font-family: "Roboto Slab", serif;
     display: flex;
-    align-items: center;
+    align-items: center;  
     text-align: center;
     font-size: 60px;
     color: black;
+}
+
+.logo{
+    height: 100px;
 }
 
 /* Media query per adattare la navbar su schermi più piccoli */

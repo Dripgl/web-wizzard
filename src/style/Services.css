@@ -1,47 +1,52 @@
-/* Stile generale per il contenitore dei servizi */
 .services-container {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-  }
-  
-  /* Stile per ciascun item */
-  .service-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  /* Stile per le icone */
-  .service-icon { 
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: white; /* Colore di sfondo delle icone */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  /* Stile per il testo del servizio */
-  .service-description {
-    font-size: 16px;
-    color: #666;
-  }
+  max-width: auto;
+  padding: 20px;
+  background-color: white;
+  flex-direction: column;
+}
 
-  .services_title{
-    color: black;
-  }
-  
-  /* Stile per le righe */
-  .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-  
+.img_cont{
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.about {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  /* Colore di sfondo delle icone */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-top: 10px;
+}
