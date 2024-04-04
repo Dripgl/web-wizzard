@@ -11,8 +11,8 @@
 .timeline {
   position: relative;
   padding: 20px 40px;
-  margin: 50px;
-  background: #f4f4f4;
+  margin: 7vw;
+  background: #00B6EC;
   border-radius: 10px;
   border: 2px solid #ccc;
   display: flex;
@@ -35,6 +35,9 @@
 }
 
 .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
 }
 
@@ -42,8 +45,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #333;
-  color: #fff;
+  background: white;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;

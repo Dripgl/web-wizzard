@@ -33,7 +33,7 @@ function Contact() {
                     </div>
                     <div className="mb-3">
                         <label for="validationTextarea" className="form-label">Your message</label>
-                        <textarea className="form-control" id="validationTextarea" placeholder="My project is..." required></textarea>
+                        <textarea className="form-control" id="validationTextarea" placeholder="My project is..." maxLength="5000" required></textarea>
                     </div>
                     <div className="checkbox_class">
                         <input type="checkbox" className="form-check-input" id="validationFormCheck1" required />

@@ -1,8 +1,8 @@
 /* Stile per il form */
 .container_form {
   background-color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 form {
@@ -14,6 +14,10 @@ form {
   box-shadow: 0 0 10px black;
   border-radius: 10px;
   padding: 30px;
+}
+
+.form-control{
+  padding-left: 4px;
 }
 
 /* Stile per le etichette */
@@ -48,7 +52,7 @@ label {
 }
 
 /* Stile per gli input e i textarea */
-textarea,
+
 select {
   width: 100%;
   padding: 10px;
@@ -56,6 +60,13 @@ select {
   border-radius: 5px;
   margin-bottom: 1rem;
   box-sizing: border-box;
+}
+
+#validationTextarea {
+  width: 100%; 
+  height: 10vw; 
+  resize: vertical; 
+  overflow-y: hidden;
 }
 
 /* Stile per i pulsanti */

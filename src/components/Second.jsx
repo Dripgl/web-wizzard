@@ -5,7 +5,9 @@ function Second() {
 
     return (
         <div className="container_second">
-            <h1 className="title_second">Lorem Ipsum</h1>
+            {/* <h1 className="title_second">Your Next Move: Contact Us</h1> */}
+            <h1 className="title_second">Ready to Collaborate?</h1>
+            {/* <h1 className="title_second">Get in Touch</h1> */}
         </div>
     )
 }
