@@ -6,7 +6,7 @@ function Contact() {
 
     return (
         <div className="container_form">
-            <form className="was-validated">
+            <form className="wrapper">
 
                 <div className="input-box">
                     <input type="text" name="name" placeholder="Name" required />
@@ -16,14 +16,13 @@ function Contact() {
                 </div>
 
                     <div className="input-box">
-                        <label for="validationTel" className="form-label">Phone Number</label>
-                        <input type="tel" className="form-control" id="validationTel" placeholder="Enter your phone number" required/>
-                            <div className="invalid-feedback">
-                                Please enter a valid phone number.
-                            </div>
+                        {/* <label for="validationTel" className="form-label">Phone Number</label> */}
+                        <input type="tel"  id="validationTel" placeholder="Enter your phone number" required/>
+                    
                     </div>
 
                     <div className="mb-3">
+                    <label for="validationTextarea" className="form-label">Choose type</label>
                         <select className="form-select" required aria-label="select example">
                             <option value="">Web App</option>
                             <option value="1">Web app</option>
@@ -33,16 +32,16 @@ function Contact() {
 
                     </div>
                     <div className="mb-3">
-                        <label for="validationTextarea" className="form-label">Textarea</label>
+                        <label for="validationTextarea" className="form-label">Your message</label>
                         <textarea className="form-control" id="validationTextarea" placeholder="My project is..." required></textarea>
                     </div>
-                    <div className="form-check mb-3">
+                    <div className="checkbox_class">
                         <input type="checkbox" className="form-check-input" id="validationFormCheck1" required />
-                        <label className="form-check-label" for="validationFormCheck1">Check this checkbox</label>
+                        <label className="form-check-label text_check" for="validationFormCheck1">I agree Privacy Policy</label>
                     </div>
 
-                    <div className="mb-3">
-                        <button className="btn btn-primary" type="submit" disabled>Submit form</button>
+                    <div className="btn_container">
+                        <button className="btn_stile" type="submit" >Send</button>
                     </div>
                 </form>
         </div>
