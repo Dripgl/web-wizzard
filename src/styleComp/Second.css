@@ -1,0 +1,11 @@
+.container_second{
+    background-color: black;
+    color: white;
+}
+
+.title_second{
+    display: flex;
+    justify-content: center;
+    font-size: 7vw;
+    padding: 30px;
+}

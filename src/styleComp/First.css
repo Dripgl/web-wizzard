@@ -1,0 +1,11 @@
+.container_first{
+    background-color: black;
+    color: white;
+}
+
+.title_first{
+    display: flex;
+    justify-content: center;
+    font-size: 7vw;
+    padding: 30px;
+}

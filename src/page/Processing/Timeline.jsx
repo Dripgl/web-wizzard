@@ -1,54 +1,84 @@
 import React from "react";
 import "./Timeline.css"
 import 'react-vertical-timeline-component/style.min.css';
+import { motion } from "framer-motion";
 
 
 function ProcessLeft() {
     return (
-        <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-timeline">
-                    <div class="timeline">
-                        <a href="#" class="timeline-content">
-                            <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                            <h3 class="title">Web Designing</h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                            </p>
-                        </a>
-                    </div>
-                    <div class="timeline">
-                        <a href="#" class="timeline-content">
-                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>    
-                            <h3 class="title">Web Development</h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                            </p>
-                        </a>
-                    </div>
-                    <div class="timeline">
-                        <a href="#" class="timeline-content">
-                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>    
-                            <h3 class="title">Web Development</h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                            </p>
-                        </a>
-                    </div>
-                    <div class="timeline">
-                        <a href="#" class="timeline-content">
-                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>    
-                            <h3 class="title">Web Development</h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                            </p>
-                        </a>
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="main-timeline">
+                        <motion.div
+                            className="timeline"
+                            whileInView={{ scale: 1.2 }} // Animazione quando l'elemento è nella vista
+                        >
+                            <div href="#" className="timeline-content">
+                                <div className="timeline-icon">
+                                    {/* <i className="fa fa-globe"></i> */}
+                                </div>
+                                <h3 className="title">Web Designing</h3>
+                                <p className="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer males uada tellus lorem, et condimentum neque commodo
+                                    Integer males uada tellus lorem, et condimentum neque commodo
+                                </p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            className="timeline"
+                            whileInView={{ scale: 1.2 }} // Animazione quando l'elemento è nella vista
+                        >
+                            <div href="#" className="timeline-content">
+                                <div className="timeline-icon">
+                                    {/* <i className="fa fa-globe"></i> */}
+                                </div>
+                                <h3 className="title">Web Designing</h3>
+                                <p className="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer males uada tellus lorem, et condimentum neque commodo
+                                    Integer males uada tellus lorem, et condimentum neque commodo
+                                </p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            className="timeline"
+                            whileInView={{ scale: 1.2 }} // Animazione quando l'elemento è nella vista
+                        >
+                            <div href="#" className="timeline-content">
+                                <div className="timeline-icon">
+                                    {/* <i className="fa fa-globe"></i> */}
+                                </div>
+                                <h3 className="title">Web Designing</h3>
+                                <p className="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer males uada tellus lorem, et condimentum neque commodo
+                                    Integer males uada tellus lorem, et condimentum neque commodo
+                                </p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            className="timeline"
+                            whileInView={{ scale: 1.2 }} // Animazione quando l'elemento è nella vista
+                        >
+                            <div href="#" className="timeline-content">
+                                <div className="timeline-icon">
+                                    {/* <i className="fa fa-globe"></i> */}
+                                </div>
+                                <h3 className="title">Web Designing</h3>
+                                <p className="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer males uada tellus lorem, et condimentum neque commodo
+                                    Integer males uada tellus lorem, et condimentum neque commodo
+                                </p>
+                            </div>
+                        </motion.div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     )
 }

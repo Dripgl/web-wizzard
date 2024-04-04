@@ -5,6 +5,8 @@ import ParticlesContainer from '../components/Animation';
 import Process from './Process';
 import Services from './Services';
 import Contact from './Contact';
+import First from '../components/First';
+import Second from '../components/Second';
 
 
 
@@ -31,7 +33,9 @@ const Home = () => {
         <h3>Based in Italy</h3>
       </div>
       <Services/>
+      <First/>
       <Process/>
+      <Second/>
       <Contact/>
 
     </div>
