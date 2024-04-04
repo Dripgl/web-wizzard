@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect";
 import ParticlesContainer from '../components/Animation';
 import Process from './Process';
 import Services from './Services';
+import Contact from './Contact';
 
 
 
@@ -31,6 +32,7 @@ const Home = () => {
       </div>
       <Services/>
       <Process/>
+      <Contact/>
 
     </div>
   );

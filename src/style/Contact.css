@@ -1,0 +1,34 @@
+.formcarry-container {
+    box-sizing: border-box;
+    margin: 40px auto 0 auto;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  
+    width: 400px;
+  
+    /* NORMAL */
+    --fc-border-color: #ECEFF9;
+    --fc-normal-text-color: #0E0B3D;
+    --fc-normal-placeholder-color: #B3B8D0;
+  
+    /* PRIMARY COLOR | HSL FORMAT*/
+    --fc-primary-color-hue: 250;
+    --fc-error-color-hue: 356;
+    --fc-primary-hsl: var(--fc-primary-color-hue), 0%, 0%;
+    --fc-error-hsl: var(--fc-error-color-hue), 100%, 54%;
+  
+    /* HOVER */
+    --fc-field-hover-bg-color: #F7F9FC;
+    --fc-border-hover-color: #DDE0EE;
+    --fc-field-hover-text-color: #B3B8D0;
+  
+    --fc-border-active-color: #1463FF;
+  }
+  
+  .formcarry-container * {
+    box-sizing: border-box;
+  }
