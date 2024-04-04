@@ -1,34 +1,63 @@
-.formcarry-container {
-    box-sizing: border-box;
-    margin: 40px auto 0 auto;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.01em;
-  
-    width: 400px;
-  
-    /* NORMAL */
-    --fc-border-color: #ECEFF9;
-    --fc-normal-text-color: #0E0B3D;
-    --fc-normal-placeholder-color: #B3B8D0;
-  
-    /* PRIMARY COLOR | HSL FORMAT*/
-    --fc-primary-color-hue: 250;
-    --fc-error-color-hue: 356;
-    --fc-primary-hsl: var(--fc-primary-color-hue), 0%, 0%;
-    --fc-error-hsl: var(--fc-error-color-hue), 100%, 54%;
-  
-    /* HOVER */
-    --fc-field-hover-bg-color: #F7F9FC;
-    --fc-border-hover-color: #DDE0EE;
-    --fc-field-hover-text-color: #B3B8D0;
-  
-    --fc-border-active-color: #1463FF;
-  }
-  
-  .formcarry-container * {
-    box-sizing: border-box;
-  }
+/* Stile per il form */
+.container_form {
+  background-color: #232323;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* Stile per le etichette */
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Stile per gli input e i textarea */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+/* Stile per i checkbox e i radio button */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Stile per i pulsanti */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Stile per il feedback di validazione */
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.8rem;
+}
+
+/* Stile per i messaggi di successo */
+.valid-feedback {
+  color: #28a745;
+  font-size: 0.8rem;
+}

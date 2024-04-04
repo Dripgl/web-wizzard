@@ -5,6 +5,7 @@ import GiuliaImg from "../asset/giulia.png"
 
 export const Services = (props) => {
     return (
+
         <div className="services-container">
             <div className="about">
                 <img className="img_cont" src={GabriImg} alt="gabri"/>   
@@ -20,10 +21,8 @@ export const Services = (props) => {
             <div>
               <h1 className="title">WEB DESIGNER</h1>  
             </div>
-
         </div>
-
-
     )
 }
+
 export default Services;

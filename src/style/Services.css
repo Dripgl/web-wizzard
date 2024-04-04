@@ -5,15 +5,15 @@
   flex-direction: column;
 }
 
-.img_cont{
+.img_cont {
   border-radius: 50%;
   border: 2px solid black;
 }
 
 .about {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -49,4 +49,21 @@ align-items: center;
   align-items: center;
   color: black;
   padding-top: 10px;
+}
+
+/* Stili per dispositivi con una larghezza dello schermo fino a 768px (dispositivi mobili) */
+@media only screen and (max-width: 768px) {
+  .img_cont {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
+/* Stili per dispositivi con una larghezza dello schermo superiore a 768px (computer) */
+@media only screen and (min-width: 769px) {
+  .img_cont {
+    max-width: 500px; 
+    width: 100%; 
+    height: auto; 
+  }
 }
